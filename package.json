@@ -1,0 +1,21 @@
+{
+  "name": "mebots",
+  "version": "1.0.0",
+  "description": "A desktop app for MeBots",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "package-mac": "electron-packager . --platform=darwin --icon=images/logo/logo.icns --arch=all --out dist/ --overwrite",
+    "package-linux": "electron-packager . --platform=linux --icon=images/logo/logo.png --arch=all --out dist/ --overwrite",
+    "package-win": "electron-packager . --platform=win32 --icon=images/logo/logo.ico --arch=all --out dist/ --overwrite"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "^29.0.1"
+  },
+  "dependencies": {
+    "electron-packager": "^17.1.2"
+  }
+}
